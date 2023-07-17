@@ -8,7 +8,7 @@ import Head from "./components/Head";
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
+      <div className="App overflow-hidden">
          
         <Head/>
         <Body/>

@@ -12,7 +12,7 @@ const SuggestedVideoCart = ({ videoInfo }) => {
 
   return (
     <Link to={"/watch?v="+videoInfo?.id?.videoId}>
-      <div className="flex gap-3 justify-center items-center mt-5 hover:bg-slate-100">
+      <div className="flex gap-3 justify-center items-center mt-5 w-100 hover:bg-slate-100">
         <div className="w-40">
           <img
             className="w-full  object-cover"

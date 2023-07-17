@@ -19,27 +19,27 @@ const WatchPage = () => {
   });
 
   return (
-    <div className="flex flex-col  xl:auto lg:mx-10  mt-5">
-    <div className="md:flex md:flex-row ">
-      <div className="">
-        <div className="aspect-w-16 aspect-h-9 h-[600px]">
-          <iframe
-            className="w-full h-full"
-            src={"https://www.youtube.com/embed/" + searchParams.get("v")}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+    <div className="flex flex-col  xl:auto lg:mx-10 mt-5">
+      <div className="md:flex md:flex-row ">
+        <div className="">
+          <div className="aspect-w-16 aspect-h-9 h-[600px]">
+            <iframe
+              className="w-full h-full"
+              src={"https://www.youtube.com/embed/" + searchParams.get("v")}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <VideoDetail videoId={videoId} />
         </div>
-        <VideoDetail videoId={videoId} />
-      </div>
-      <div className="md:w-2/4 mt-4 md:mt-0">
-        <LiveChat />
-        <SuggestedVideo videoId={videoId} />
+        <div className="md:w-2/4 mt-4 md:mt-0">
+          <LiveChat />
+          <SuggestedVideo videoId={videoId} />
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 
